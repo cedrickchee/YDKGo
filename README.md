@@ -12,3 +12,9 @@ You Don't Know Go (YDKGo) book was created based on [Ultimate Go training](https
 
 - Hugo 0.68 and above
 - Hugo extended version (with Sass/SCSS support), read more [here](https://gohugo.io/getting-started/installing/#snap-package)
+
+### Build
+
+```sh
+hugo server --minify --baseURL=http://0.0.0.0:1313/
+```
