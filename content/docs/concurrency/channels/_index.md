@@ -280,7 +280,7 @@ terminate the loop. We're both signaling with data and without data.
 func pooling() {
     // We want to have guarantees and we're signaling with string data.
     // Pooling and the whole idea is Goroutines waiting for work to do. So the
-    // work is gonna be string based and we want guarantees.
+    // work will be string based and we want guarantees.
     // You absolutely want guarantees with pooling, because later on we want to
     // be able to apply deadlines or timeouts when a pool is, let's say,
     // underload and not responding fast enough.
@@ -479,7 +479,7 @@ then, they help us move forward again, when that wound has been healed.
 will immediately block.
 
 A Denial-of-service attack is a great example. We get a bunch of requests coming
-to our server. If we try to handle every single request, we are gonna implode.
+to our server. If we try to handle every single request, we are will implode.
 We have to handle what we can and drop other requests.
 
 ```go

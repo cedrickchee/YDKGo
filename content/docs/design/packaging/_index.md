@@ -81,7 +81,7 @@ Portability: the more decoupled, the more reusable a package is, the better it's
 
 ## Package-Oriented Design
 
-I'm gonna share a project structure with you that is my own, that is working, that follows within these design philosophies, and allows us to make some very clear engineering choices across our team, which again, gives us levels of consistency that we need.
+I will share a project structure with you that is my own, that is working, that follows within these design philosophies, and allows us to make some very clear engineering choices across our team, which again, gives us levels of consistency that we need.
 
 ### Project Structure
 
@@ -204,7 +204,7 @@ You can also see that I've got a package here called "mid" which is my middlewar
     - `cmd/`
     - `internal/`
 
-It's nice to just have one level inside of `platform` and inside of `user`. I think it helps keep things clearer and organized. `platform` is a little harder to try to maintain decoupling at the same level but I work very hard to do this at the `internal` level. I really wanna make sure at the `internal` level, I try to keep packages at the same level from importing each other.
+It's nice to just have one level inside of `platform` and inside of `user`. I think it helps keep things clearer and organized. `platform` is a little harder to try to maintain decoupling at the same level but I work very hard to do this at the `internal` level. I really want to make sure at the `internal` level, I try to keep packages at the same level from importing each other.
 
 The other thing I want us to do is understand the imports sheet. I have made sure that this projects' structure is in such a way where we should always be able to validate the following.
 

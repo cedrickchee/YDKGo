@@ -337,7 +337,7 @@ truth, and now make this the point of truth, and yet we have these pointers now
 working against the old data structures.
 
 This is a side effect, these are the nasty bugs that are so hard to find, and so
-anytime we're working with pointer semantics, that's great, it's gonna give us
+anytime we're working with pointer semantics, that's great, it will give us
 levels of efficiency, right, we have to be careful there, but we also have to
 make sure that we're very clean with data updates, like with slices, and that
 our mutations are not going to cause problems, or the mutations are happening

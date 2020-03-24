@@ -279,7 +279,7 @@ another system called Pillar, which is a web server with some front-end that
 consume it. It has a database too. Our goal is to move the Xenia's data into
 Pillar's system.
 
-How long is it gonna take? How do we know when a piece of code is done so we can
+How long will it take? How do we know when a piece of code is done so we can
 move on the next piece of code? If you are a technical manager, how do you know
 whether your debt is "wasting effort" or "not putting enough effort"?
 
@@ -604,7 +604,7 @@ By looking at the API (functions), we need to decouple the API from the concrete
 implementation. The decoupling that we do must get all the way down into
 initialization. To do this right, the only piece of code that we need to change
 is initialization. Everything else should be able to act on the behavior that
-these types are gonna provide.
+these types are going to provide.
 
 `pull` is based on the concrete. It only knows how to work on Xenia. However,
 if we are able to decouple `pull` to use any system that know how to pull data,

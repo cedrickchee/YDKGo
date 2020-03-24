@@ -27,7 +27,7 @@ package, dot exit, and you can set a return code on that, that's the fastest way
 or you can call the built in function panic.
 
 Now you'll choose one over the other depending on if you need a stack trace or
-not. So if you need the stack trace you're gonna call panic, if you don't you
+not. So if you need the stack trace you will call panic, if you don't you
 just call OS exit.
 
 First, let's look at the language mechanic first on how the default error type
@@ -213,11 +213,11 @@ func Unmarshal(data []byte, v interface{}) error {
 }
 ```
 
-The one thing I wanna show you here is the second parameter. The second parameter's based on the empty interface. The empty interface tells us nothing, because any piece of data, any value or pointer, satisfies it, because it doesn't have to have any behavior.
+The one thing I want to show you here is the second parameter. The second parameter's based on the empty interface. The empty interface tells us nothing, because any piece of data, any value or pointer, satisfies it, because it doesn't have to have any behavior.
 
 I want to be very careful when we're using the empty interface. Don't use it to write generic APIs.
 
-We should be using the empty interface when we have to pass data around, where that data can be hidden without problems, or in this case, where we're gonna use the reflect package, because what we wanna do is at runtime, or dynamically inspect the concrete data. This is great if you wanna do model validation.
+We should be using the empty interface when we have to pass data around, where that data can be hidden without problems, or in this case, where we will use the reflect package, because what we want to do is at runtime, or dynamically inspect the concrete data. This is great if you want to do model validation.
 
 We then return different error types depending on these.
 
@@ -519,7 +519,7 @@ cycles on something that you could've been doing actual real work.
 And it goes beyond just the CPU cycles of your process. You're eating network
 bandwidth, disk I/O, other complexities that go through the entire system.
 
-So during development I really wanna make sure that we always have a good level
+So during development I really want to make sure that we always have a good level
 of signal in our logs and we're logging from a trace perspective the bare
 minimum we need, but then we're logging the errors in a way that there's always
 enough context if we want to take the time or need to take the time to look at it.
@@ -530,7 +530,7 @@ errors throughout a log, have a consistent pattern that we all can follow and
 review during code reviews, where we're doing logging the same way and it's
 not random?
 
-Now I wanna show you a pattern using Dave Cheney's errors package.
+Now I want to show you a pattern using Dave Cheney's errors package.
 Dave Cheney's error package is very, really nice, and it gives us a consistent
 way to apply error handling, apply logging and have code consistency throughout,
 minimizing again a lot of pain.
@@ -578,14 +578,14 @@ So here we call `thirdCall`, we get back an error, interface value. We ask is
 there a concrete value stored inside the error interface? The answer is yes.
 
 When the answer is yes, now the developer writing this code has to make a
-choice. It's really boolean. Am I gonna handle the error here, or not?
+choice. It's really boolean. Am I going to handle the error here, or not?
 
 If the answer is handling the error here, we deal with it.
-But if the answer is no, I'm not gonna handle the error, then there's only one
+But if the answer is no, I will not handle the error, then there's only one
 thing you're allowed to do, and that is wrap the error with context.
 
 We would prefer to handle the error, the lower in the call stack we handle the
-error, the better opportunity you're gonna have for recovery.
+error, the better opportunity you will have for recovery.
 
 In this case the developer has decided not to handle the error. They don't have
 to worry about logging and recovery anymore. All they worry about is the wrap
@@ -605,7 +605,7 @@ that `secondCall` was calling `thirdCall`.
 
 Now we take this error, we wrap it, and we send it back up the call stack.
 
-`firstCall` now is involved. `firstCall` now has to decide am I gonna handle the
+`firstCall` now is involved. `firstCall` now has to decide am I going to handle the
 error? If the answer is no, then you only have one choice. We wrap the error
 again with that context.
 

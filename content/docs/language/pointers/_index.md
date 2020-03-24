@@ -36,7 +36,7 @@ By the time the goroutine that was created for this Go program wants to execute
 main, it's already executed a bunch of code from the run time.
 
 Any time a goroutine makes a function call, what it's going to do is take some
-memory off the stack. We call this a frame of memory. It's gonna slice a frame
+memory off the stack. We call this a frame of memory. It will slice a frame
 of memory off the stack.
 
 The stack memory in Go starts out at 2K. It is very small. It can change over
@@ -69,7 +69,7 @@ the program.
 
 ### Value and pointer semantics behavior
 
-If you wanna write code in Go that is optimized for correctness, that you can
+If you want to write code in Go that is optimized for correctness, that you can
 read and understand the impact of things, then your value and your pointer
 semantics are everything.
 
@@ -81,7 +81,7 @@ across a program boundary.
 ## Escape analysis
 
 Value semantics have the benefit of being able to mutate memory and isolation
-within our own sandboxes, but it has the cost of inefficiency. We're gonna have
+within our own sandboxes, but it has the cost of inefficiency. We will have
 lost a copy of the data as we cross over these program boundaries.
 Pointer semantics, however, fix the efficiency issue.
 
@@ -138,8 +138,8 @@ all of the time.
 
 ### Escape analysis report
 
-When you use the `gcflags` on the `go build` calls, what you're gonna get is
-not a binary, but we're gonna get the escape analysis report. This report tells
+When you use the `gcflags` on the `go build` calls, what you will get is
+not a binary, but we will get the escape analysis report. This report tells
 us why something is allocating.
 
 ## Stack growth
@@ -277,7 +277,7 @@ We can't let the live heap get all the way to the top of the heap because if we
 will want to run it concurrently, that means that we would blow by it and
 anytime the live heap passed beyond the scope of the size of the heap, there's
 one configuration option in Go called `GOGC` and the default is 100 and that
-means we're gonna have 100% growth on that heap when the live heap has to go
+means we will have 100% growth on that heap when the live heap has to go
 by it.
 
 Chart:
@@ -299,7 +299,7 @@ scheduler, not a preemptive scheduler.
 
 We have two things. We have our stacks, and our stacks have frames and in
 some cases these frames are going to have values that point to values on the
-heap. You're gonna have other values here and some values can point to
+heap. You will have other values here and some values can point to
 other values.
 
 From a tri-color perspective, we turn all of all of these values,
@@ -314,9 +314,9 @@ We have to leverage value semantics to their fullest extent and know when to
 use the pointer semantics, understand the costs and the benefits of these things
 and try to reduce the amount of allocations our program is having.
 
-You're not gonna write zero allocation software. We're not trying to prevent it.
+You will not write zero allocation software. We're not trying to prevent it.
 We're trying to reduce it. Less is always more and if there's less work for
-the GC to do, this is all gonna happen much faster.
+the GC to do, this is all going to happen much faster.
 
 A larger heap doesn't necessarily mean better performance because it just means
 that when the live heap gets to the top, it's got that much more work to get

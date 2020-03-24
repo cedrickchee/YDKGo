@@ -411,7 +411,7 @@ get a chance to execute at all.
 
 Deadlock!
 This is a very special thing in Go. When the runtime determines that all the
-Goroutines are there can no longer move forward, it's gonna panic.
+Goroutines are there can no longer move forward, it will panic.
 
 #### Goroutine Time Slicing
 

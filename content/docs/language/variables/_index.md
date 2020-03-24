@@ -8,7 +8,7 @@ weight: 1
 ## Type
 
 - Type is everything. Type is life.
-- Our basic unit of memory that we're gonna be working with in our programming model is a byte.
+- Our basic unit of memory that we will be working with in our programming model is a byte.
 - Type provides us two pieces of information, size, how much memory, how many bytes of memory we need to read or write at any given time, and its representation, what it represents.
 - Go has the built-in types: numerics, string, bool.
 - When you look at the name `float64`, it's really interesting because it tells us both parts of the type information, `float64`, 64 tells us that it's an eight byte, 64 bit value that's giving us the cost in terms of memory footprint, and float tells us it's an IEEE 754 binary decimal.

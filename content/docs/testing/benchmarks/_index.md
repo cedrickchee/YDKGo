@@ -16,7 +16,7 @@ Benchmark file's have to have `<file_name>_test.go` and use the `Benchmark`
 functions like below. The goal is to know what perform better and what allocate
 more or less between `Sprint` and `Sprintf`.
 
-Our guess is that `Sprint` is gonna be better because it doesn't have any
+Our guess is that `Sprint` will be better because it doesn't have any
 overhead doing the formatting. However, this is not true. Remember we have to
 optimize for correctness so we don't want to guess.
 
@@ -372,7 +372,7 @@ func merge(l, r []int) []int {
 }
 ```
 
-I reconstructed everything that the author did and I'm gonna go ahead and run
+I reconstructed everything that the author did and I will go ahead and run
 this benchmark just like the author did in the article.
 
 ```sh

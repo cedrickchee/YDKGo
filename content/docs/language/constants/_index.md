@@ -116,7 +116,7 @@ const (
 
 We only have to assign iota one time to the very first constant in the block and we will automatically, for free, get the incremental.
 
-iota is a very powerful mechanism if you're creating a set of constants that are gonna have some unique IDs and it just kind of let's the language set all that up for you.
+iota is a very powerful mechanism if you're creating a set of constants that are going to have some unique IDs and it just kind of let's the language set all that up for you.
 
 **Wrap-up**
 

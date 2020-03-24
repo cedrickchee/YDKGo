@@ -224,7 +224,7 @@ I told you there are exceptions to everything, and here's one of those exception
 
 When you are implementing or using functions that have un-marshall or decode in
 it they require naturally to have pointer semantics. You need to share because
-they're gonna be mutated. So here are four APIs in the Time package that are
+they will be mutated. So here are four APIs in the Time package that are
 switching semantics from value to pointer.
 
 Here is a factory function for the file, for OS:

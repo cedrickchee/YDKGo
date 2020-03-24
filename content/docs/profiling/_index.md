@@ -649,7 +649,7 @@ GC time for 1st phase (stop-the-world time) should never add up to be more than 
 
 `GC forced`: If the program is idle enough, then the GC will force itself to run.
 You can see that we've knocked the heap down from 4 to 3 meg. If you think you
-have a memory leak, I'm gonna ask you to run this GC trace, because this is the
+have a memory leak, I will ask you to run this GC trace, because this is the
 only way to really know if we're leaking memory in the heap.
 
 What you also see is the scavenger. The scavenger runs in the background trying
@@ -749,7 +749,7 @@ Setting the `GODEBUG=gctrace=1` causes the GC to emit a single line to standard
 error at each collection, summarizing the amount of memory collected and the
 length of the pause.
 
-What we are gonna see are bad traces followed by this pattern:
+What we will see are bad traces followed by this pattern:
 
 ```
     gc {0} @{1}s {2}%: {3}+...+{4} ms clock, {5}+...+{6} ms cpu, {7}->{8}->{9} MB, {10} MB goal, {11} P

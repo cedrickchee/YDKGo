@@ -69,8 +69,8 @@ func createUserV1() user {
 // keep these things on the stack. But when we SHARE something above the call stack like this,
 // escape analysis said this memory is no longer be valid when we get back to main, we must put it
 // out there on the heap. main will end up having a pointer to the heap.
-// In fact, this allocation happens immediately on the heap. createUserV2 is gonna have a pointer
-// to the heap. But u is gonna base on value semantic.
+// In fact, this allocation happens immediately on the heap. createUserV2 will have a pointer
+// to the heap. But u is going to base on value semantic.
 //go:noinline
 func createUserV2() *user {
 	u := user{

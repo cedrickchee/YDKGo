@@ -61,13 +61,13 @@ Now there are times when maybe you're dealing with data that is so large that a 
 
 The array is not the most important data structure in Go. The slice is the most important data structure in Go.
 
-And this isn't cause the slice uses an array underneath, technically, slice is really a vector, and if you've watched any C++ videos over the last five years of talking about performance, you will hear a lot about vectors, use vectors. Why, because, just like the slice, we're gonna be using arrays behind the scenes, we're gonna be doing those linear iterations, and we're gonna be creating predictable access patterns to memory that the prefetchers are going to pick up on.
+And this isn't cause the slice uses an array underneath, technically, slice is really a vector, and if you've watched any C++ videos over the last five years of talking about performance, you will hear a lot about vectors, use vectors. Why, because, just like the slice, we will be using arrays behind the scenes, we will be doing those linear iterations, and we will be creating predictable access patterns to memory that the prefetchers are going to pick up on.
 
 ### TLB cache
 
 There's another cache in the hardware called the TLB.
 
-The TLB is a very special cache that the operating system (OS) is gonna be managing. And what it does is it creates a cache of virtual addresses to OS page and physical memory locations. In other words, your program is working in virtual memory, it thinks it's got real memory, but it's not, it's given a full virtual memory, because the OS gives it that level of abstraction.
+The TLB is a very special cache that the operating system (OS) will be managing. And what it does is it creates a cache of virtual addresses to OS page and physical memory locations. In other words, your program is working in virtual memory, it thinks it's got real memory, but it's not, it's given a full virtual memory, because the OS gives it that level of abstraction.
 
 TLB cache misses:
 
@@ -76,7 +76,7 @@ TLB cache misses:
 
 **Back to the piece of [code](benchmarks/caching/caching.go)**
 
-So, if we go back to our results now, I want you to notice something here. We should be able to understand now why we see what see. Look at row traversal. Row traversal was not only the fastest, it was also incredibly consistent, and why is that? That is because, when we start walking through the matrix row by row, we're walking it down cache line by connected cache line. That row major traversal is creating a predictable access pattern to memory, and the prefetchers are coming in and reducing all of the main memory latency cost, we're gonna get the best performance I can get on my machine through row major traversal.
+So, if we go back to our results now, I want you to notice something here. We should be able to understand now why we see what see. Look at row traversal. Row traversal was not only the fastest, it was also incredibly consistent, and why is that? That is because, when we start walking through the matrix row by row, we're walking it down cache line by connected cache line. That row major traversal is creating a predictable access pattern to memory, and the prefetchers are coming in and reducing all of the main memory latency cost, we will get the best performance I can get on my machine through row major traversal.
 
 But why is column traversal so slow and inconsistent? I played a small game here with the matrix, I made the matrix large enough so this element and the next element not only were not really in a predictable stride, let's say, but made sure that those two elements ended up on two different OS pages. Yes, they were very far away from each other, and on different OS pages. I've got a ton of problems, this is basically pure random memory access, when we're doing column traversal. This is why our results were so inconsistent and so slow.
 
