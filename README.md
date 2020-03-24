@@ -8,13 +8,25 @@ You Don't Know Go (YDKGo) book was created based on [Ultimate Go training](https
 
 ## Development
 
+The site is built using the [Hugo](https://gohugo.io/) static site generator. Check out the [Hugo Quick Start](https://gohugo.io/getting-started/quick-start/) for a quick intro.
+
 ### Requirements
 
 - Hugo 0.68 and above
-- Hugo extended version (with Sass/SCSS support), read more [here](https://gohugo.io/getting-started/installing/#snap-package)
+- Hugo extended version (with Sass/SCSS support)
 
-### Build
+### Serving the site locally
+
+To build and locally serve this site, you need to [install Hugo, extended version](https://gohugo.io/getting-started/installing). Once Hugo is installed:
 
 ```sh
-hugo server --minify --baseURL=http://0.0.0.0:1313/
+make serve
 ```
+
+### Publishing the site
+
+The website is automatically published by [Netlify](https://netlify.com/). Any time changes are pushed to the `master` branch, the site is rebuilt and redeployed.
+
+### Site content
+
+All of the [Markdown](https://www.markdownguide.org/) content used to build the site's documentation is in the [`content`](content) directory.
