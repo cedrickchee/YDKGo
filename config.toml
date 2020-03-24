@@ -1,4 +1,4 @@
-baseURL = "http://localhost:1313/"
+baseURL = "https://ydkgo.netlify.com/"
 languageCode = "en-us"
 title = "You Don't Know Go Yet"
 theme = "book"
