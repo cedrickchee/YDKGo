@@ -1,0 +1,9 @@
+# OS junk
+*.swp
+*.swo
+.DS_Store
+*~
+
+# Hugo
+/public/
+/resources/_gen/
