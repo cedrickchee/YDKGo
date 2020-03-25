@@ -26,6 +26,10 @@ enableGitInfo = true
   name = "Github"
   url = "https://github.com/cedrickchee/YDKGo"
   weight = 10
+[[menu.after]]
+  name = "Twitter"
+  url = "https://twitter.com/cedric_chee"
+  weight = 11
 
 [params]
   # (Optional, default true) Controls table of contents visibility on right side of pages.
