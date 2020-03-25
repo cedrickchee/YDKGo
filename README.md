@@ -44,8 +44,8 @@ All of the [Markdown](https://www.markdownguide.org/) content used to build the 
 This repository contains a variety of content; some developed by Cedric Chee, and some from third-parties. The third-party content is distributed under the license provided by those parties.
 
 The content of this project itself is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/), and the underlying source code used to format and display that content is licensed under the [Apache License, Version 2.0](LICENSE).
-</details>
 
 The [Go gopher](http://blog.golang.org/gopher) was designed by [Renee French](http://reneefrench.blogspot.com/), is licensed under Creative Commons 3.0 Attributions.
 
 [Gopher picture](https://github.com/MariaLetta/free-gophers-pack) by Maria Letta.
+</details>
