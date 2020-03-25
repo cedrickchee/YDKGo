@@ -3,12 +3,14 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/14232e97-1d7c-4ee4-ae09-da4fcd02d860/deploy-status)](https://app.netlify.com/sites/ydkgo/deploys)
 
 <p align="center">
-  <img src="gopher.png" alt="Gopher" width="400"/>
+  <img src="static/img/gopher.png" alt="Gopher" width="400"/>
 </p>
 
 Go programming language study notes turned book.
 
-This book is inspired by ['You Don't Know JS Yet' (YDKJS)](https://github.com/getify/You-Dont-Know-JS) book series. YDKJS helped me understand JavaScript under the hood, after more than 8 years writing software with JS.
+You can read the book online [here](https://ydkgo.netlify.com/) entirely for FREE.
+
+This book is inspired by ['You Don't Know JS Yet' (YDKJS)](https://github.com/getify/You-Dont-Know-JS) book series. YDKJS helped me understand JavaScript under the hood, after more than 8 years writing software in JS.
 
 You Don't Know Go (YDKGo) book is based on [Ultimate Go training](https://www.ardanlabs.com/ultimate-go/), which is an intermediate-level class for engineers with some experience with Go trying to dig deeper into the language.
 
