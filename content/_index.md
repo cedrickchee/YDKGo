@@ -4,13 +4,23 @@ type: docs
 bookToc: false
 ---
 
+![Gopher](/img/gopher.png#center)
+
+---
+
+# What _Is_ Go?
+
+You don't know Go, yet. Neither do I, not fully anyway. None of us do. But we can all start getting to know Go better.
+
 # About the Book
 
 Go programming language study notes turned book.
 
-This book is inspired by ['You Don't Know JS Yet' (YDKJS)](https://github.com/getify/You-Dont-Know-JS) book series. YDKJS helped me understand JavaScript under the hood, after more than 8 years writing software with JS.
+This book is inspired by ['You Don't Know JS Yet' (YDKJS)](https://github.com/getify/You-Dont-Know-JS) book series. YDKJS helped me understand JavaScript under the hood, after more than 8 years writing software in JS.
 
-You Don't Know Go (YDKGo) book was created based on [Ultimate Go training](https://www.ardanlabs.com/ultimate-go/), which is an intermediate-level class for engineers with some experience with Go trying to dig deeper into the language.
+You Don't Know Go (YDKGo) book is based on [Ultimate Go training](https://www.ardanlabs.com/ultimate-go/), which is an intermediate-level class for engineers with some experience with Go trying to dig deeper into the language.
+
+---
 
 # Table of Contents
 
@@ -233,3 +243,15 @@ You Don't Know Go (YDKGo) book was created based on [Ultimate Go training](https
 
 - Advanced Performance and Benchmarking [[guide](/docs/testing/benchmarks/_index.md#advanced-performance)]
 - Fuzzing [[guide](https://github.com/ardanlabs/gotraining/blob/master/topics/go/testing/fuzzing/README.md)]
+
+---
+
+#### License
+
+This book contains a variety of content; some developed by Cedric Chee, and some from third-parties. The third-party content is distributed under the license provided by those parties.
+
+The content of this project itself is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/), and the underlying source code used to format and display that content is licensed under the [Apache License, Version 2.0](LICENSE).
+
+The [Go gopher](http://blog.golang.org/gopher) was designed by [Renee French](http://reneefrench.blogspot.com/), is licensed under Creative Commons 3.0 Attributions.
+
+[Gopher picture](https://github.com/MariaLetta/free-gophers-pack) by Maria Letta.
