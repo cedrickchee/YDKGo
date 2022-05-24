@@ -9,6 +9,12 @@ weight: 2
 
 Declare a variable of type `example` set to its zero value.
 ```go
+type example struct {
+    flag    bool
+    pi      float32
+    counter int64
+}
+
 var e1 example
 ```
 
@@ -47,7 +53,7 @@ Example:
 type example struct {
     counter int64
     pi      float32
-    float   bool
+    flag    bool
 }
 ```
 
