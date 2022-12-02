@@ -28,6 +28,10 @@ The site is built using the [Hugo](https://gohugo.io/) static site generator. Ch
 To build and locally serve this site, you need to [install Hugo, extended version](https://gohugo.io/getting-started/installing). Once Hugo is installed:
 
 ```sh
+# first, fill Git submodules
+make setup
+
+# start Hugo server
 make serve
 ```
 

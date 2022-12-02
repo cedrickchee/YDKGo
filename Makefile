@@ -1,5 +1,5 @@
 submodule-update:
-	git submodule foreach git pull origin master
+	git submodule update --init --recursive
 
 setup: submodule-update
 
