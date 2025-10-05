@@ -8,7 +8,7 @@
 
 Go programming language study notes turned book.
 
-You can read the book online [here](https://ydkgo.netlify.com/) entirely for FREE.
+You can read the book online [here](https://ydkgo.netlify.app/) entirely for FREE.
 
 This book is inspired by ['You Don't Know JS Yet' (YDKJS)](https://github.com/getify/You-Dont-Know-JS) book series. YDKJS helped me understand JavaScript under the hood, after more than 8 years writing software in JS.
 
